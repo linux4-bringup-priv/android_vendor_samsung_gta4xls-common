@@ -7,3 +7,860 @@ soong_namespace {
 	],
 }
 
+cc_prebuilt_library_shared {
+	name: "libGLES_mali",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libGLES_mali.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/libGLES_mali.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "gatekeeper.s5e8825",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/gatekeeper.s5e8825.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/gatekeeper.s5e8825.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vulkan.mali",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/vulkan.mali.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vulkan.mali.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsecnativefeature",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsecnativefeature.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsecnativefeature.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsecril-client.s5e8825",
+	stem: "libsecril-client",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsecril-client.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsecril-client.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libteecl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libteecl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libteecl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libuuid",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libuuid.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libuuid.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "sensors.grip",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/sensors.grip.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/sensors.grip.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "sensors.inputvirtual",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/sensors.inputvirtual.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/sensors.inputvirtual.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "sensors.sensorhub",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/sensors.sensorhub.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/sensors.sensorhub.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libprofileparamstorage",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libprofileparamstorage.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsecaudiocoreutils",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsecaudiocoreutils.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libspatializerparamstorage",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libspatializerparamstorage.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.gnss@2.1-impl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "camera.s5e8825",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/camera.s5e8825.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.gnss@2.1-impl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libMERTA",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libMERTA.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libc++_shared",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libc++_shared.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libengmode_client",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libengmode_client.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libexynoscamera_merta_plugin",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libexynoscamera_merta_plugin.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libexynoscamera_plugin",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libexynoscamera_plugin.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libexynoscamera_swlme_plugin",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libexynoscamera_swlme_plugin.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libexynoscamera_vpl_plugin",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libexynoscamera_vpl_plugin.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libhwjsqz",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libhwjsqz.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "liblmecpu",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/liblmecpu.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsec2lsi_conversion",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsec2lsi_conversion.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsensorlistener",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsensorlistener.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libskeymint10device",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libskeymint10device.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libskeymint_cli",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libskeymint_cli.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libswlme",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libswlme.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libuniapi",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libuniapi.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libuniplugin",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libuniplugin.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libwrappergps",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libwrappergps.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libwvhidl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libwvhidl.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.gnss@2.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.gnss@2.1",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.1.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.keymint-V1-ndk_platform",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.keymint-V1-ndk_platform.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.thermal@1.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.4-service.widevine",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "cbd",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/cbd"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.drm@1.4-service.widevine",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.security.keymint-service.samsung",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.security.keymint-service.samsung"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "gpsd",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/gpsd"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.samsung.hardware.gnss@2.1-service",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "tzdaemon",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/tzdaemon"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "tzts_daemon",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/tzts_daemon"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+install_symlink {
+	name: "libGLES_mali_libOpenCL_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libOpenCL.so",
+	symlink_target: "/vendor/lib/egl/libGLES_mali.so",
+}
+
+install_symlink {
+	name: "libGLES_mali_libOpenCL.so_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libOpenCL.so.1",
+	symlink_target: "/vendor/lib/egl/libGLES_mali.so",
+}
+
+install_symlink {
+	name: "libGLES_mali_libOpenCL.so.1_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libOpenCL.so.1.1",
+	symlink_target: "/vendor/lib/egl/libGLES_mali.so",
+}
+
+install_symlink {
+	name: "libGLES_mali_libOpenCL_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libOpenCL.so",
+	symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+
+install_symlink {
+	name: "libGLES_mali_libOpenCL.so_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libOpenCL.so.1",
+	symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+
+install_symlink {
+	name: "libGLES_mali_libOpenCL.so.1_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libOpenCL.so.1.1",
+	symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+
