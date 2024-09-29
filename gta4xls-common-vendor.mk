@@ -75,7 +75,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta4xls-common/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
     vendor/samsung/gta4xls-common/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/gta4xls-common/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
-    vendor/samsung/gta4xls-common/proprietary/vendor/firmware/w9021_gta4xls.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/w9021_gta4xls.bin
+    vendor/samsung/gta4xls-common/proprietary/vendor/firmware/w9021_gta4xls.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/w9021_gta4xls.bin \
+    vendor/samsung/gta4xls-common/proprietary/vendor_ramdisk/vendor/firmware/hx83102e_gta4xls.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/hx83102e_gta4xls.bin \
+    vendor/samsung/gta4xls-common/proprietary/vendor_ramdisk/vendor/firmware/w9021_gta4xls.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/w9021_gta4xls.bin
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
