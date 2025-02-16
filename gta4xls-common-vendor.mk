@@ -119,7 +119,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.keymint-V1-ndk_platform \
     vendor.samsung.hardware.thermal@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine \
-    cbd \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.security.keymint-service.samsung \
     gpsd \
