@@ -599,7 +599,7 @@ cc_prebuilt_library_shared {
                 "libion_exynos",
                 "libhwjpeg",
                 "libnativewindow",
-                "//device/samsung/gta4xl-common/shims/stub:libexynoscamera3",
+                "//device/samsung/gta4xls-common/shims/stub:libexynoscamera3",
                 "libbase",
                 "libc++",
                 "libc",
