@@ -96,6 +96,7 @@ PRODUCT_PACKAGES += \
     camera.s5e8825 \
     vendor.samsung.hardware.gnss@2.1-impl \
     libMERTA \
+    lib_android_keymaster_skeymint_utils \
     libc++_shared \
     libcrypto-tm \
     libengmode_client \
@@ -104,9 +105,11 @@ PRODUCT_PACKAGES += \
     libexynoscamera_swlme_plugin \
     libexynoscamera_vpl_plugin \
     libhwjsqz \
+    libkeymaster_portable.samsung \
     liblmecpu \
     libsec2lsi_conversion \
     libsensorlistener \
+    libskeymint \
     libskeymint10device \
     libskeymint_cli \
     libswlme \
