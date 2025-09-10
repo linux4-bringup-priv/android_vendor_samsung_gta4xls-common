@@ -115,7 +115,7 @@
             <Limit name="performance-point-3840x2160" range="30" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="can-swap-width-height" value="1" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
         </MediaCodec>
         <MediaCodec name="c2.exynos.h264.encoder.secure" type="wfd/avc">
             <Limit name="size" min="32x32" max="4096x4096" />  <!-- 1920x1088, 150fps -->
@@ -131,7 +131,7 @@
             <Limit name="concurrent-instances" max="2" />
             <Attribute name="software-codec" />
             <Feature name="can-swap-width-height" value="1" />
-            <!-- <Feature name="qp-bounds" /> -->
+            <!-- <Feature name="video-minimum-quality" /> -->
         </MediaCodec>
         <MediaCodec name="c2.exynos.hevc.encoder" type="video/hevc" >
             <Alias name="OMX.Exynos.HEVC.Encoder" />
@@ -147,7 +147,7 @@
             <Limit name="performance-point-3840x2160" range="30" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="can-swap-width-height" value="1" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
         </MediaCodec>
         <MediaCodec name="c2.exynos.hevc.encoder.secure" type="wfd/hevc">
             <Limit name="size" min="64x64" max="4096x4096" />  <!-- 1920x1088, 150fps -->
@@ -163,7 +163,7 @@
             <Limit name="concurrent-instances" max="2" />
             <Attribute name="software-codec" />
             <Feature name="can-swap-width-height" value="1" />
-            <!-- <Feature name="qp-bounds" /> -->
+            <!-- <Feature name="video-minimum-quality" /> -->
         </MediaCodec>
         <MediaCodec name="c2.exynos.vp8.encoder" type="video/x-vnd.on2.vp8" >
             <Alias name="OMX.Exynos.VP8.Encoder"/>
@@ -178,7 +178,7 @@
             <Limit name="performance-point-1920x1080" range="60" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="can-swap-width-height" value="1" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
         </MediaCodec>
         <MediaCodec name="c2.android.av1.encoder" type="video/av01" enabled="false" minsdk="34" update="true">
             <Limit name="alignment" value="2x2" />
