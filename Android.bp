@@ -599,7 +599,7 @@ cc_prebuilt_library_shared {
                 "libion_exynos",
                 "libhwjpeg",
                 "libnativewindow",
-                "//device/samsung/gta4xls-common/shims/stub:libexynoscamera3",
+                "libexynoscamera3",
                 "libbase",
                 "libc++",
                 "libc",
@@ -1666,4 +1666,9 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libOpenCL.so.1.1",
     symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+cc_library_shared {
+    name: "libexynoscamera3",
+    compile_multilib: "both",
+    soc_specific: true,
 }
